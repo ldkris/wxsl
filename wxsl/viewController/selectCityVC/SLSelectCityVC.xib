@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SLSelectCityVC">
+            <connections>
+                <outlet property="mInfoTableView" destination="gDb-Nd-aKg" id="2Jq-Ci-aTj"/>
+                <outlet property="mSearBar" destination="Nf6-Sj-ERR" id="fsu-90-8mY"/>
+                <outlet property="searchDisplayController" destination="nU0-Z5-NhX" id="Mzz-8m-go8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="gDb-Nd-aKg">
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="gj6-jM-BB1"/>
+                        <outlet property="delegate" destination="-1" id="fos-hf-ajJ"/>
+                    </connections>
+                </tableView>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="Nf6-Sj-ERR">
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="0Zc-pg-atf"/>
+                    </connections>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="gDb-Nd-aKg" secondAttribute="bottom" id="2oT-rS-Dha"/>
+                <constraint firstAttribute="trailing" secondItem="gDb-Nd-aKg" secondAttribute="trailing" id="WeE-04-rlC"/>
+                <constraint firstItem="gDb-Nd-aKg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XW7-Ui-inc"/>
+                <constraint firstItem="gDb-Nd-aKg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="czI-4e-dlz"/>
+                <constraint firstItem="Nf6-Sj-ERR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iR2-Rp-gQR"/>
+                <constraint firstAttribute="trailing" secondItem="Nf6-Sj-ERR" secondAttribute="trailing" id="qfI-f4-8K2"/>
+                <constraint firstItem="Nf6-Sj-ERR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zFz-Ur-G1S"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="gDb-Nd-aKg"/>
+                    <exclude reference="Nf6-Sj-ERR"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="iR2-Rp-gQR"/>
+                    <exclude reference="qfI-f4-8K2"/>
+                    <exclude reference="zFz-Ur-G1S"/>
+                    <exclude reference="2oT-rS-Dha"/>
+                    <exclude reference="WeE-04-rlC"/>
+                    <exclude reference="XW7-Ui-inc"/>
+                    <exclude reference="czI-4e-dlz"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="gDb-Nd-aKg"/>
+                    <include reference="Nf6-Sj-ERR"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="iR2-Rp-gQR"/>
+                    <include reference="qfI-f4-8K2"/>
+                    <include reference="zFz-Ur-G1S"/>
+                    <include reference="2oT-rS-Dha"/>
+                    <include reference="WeE-04-rlC"/>
+                    <include reference="XW7-Ui-inc"/>
+                    <include reference="czI-4e-dlz"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="280" y="234"/>
+        </view>
+        <searchDisplayController id="nU0-Z5-NhX">
+            <connections>
+                <outlet property="delegate" destination="-1" id="Tie-Mi-nqy"/>
+                <outlet property="searchContentsController" destination="-1" id="qt7-ee-zuR"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="Nwr-Td-wWc"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="obS-eS-2XM"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+</document>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="61" id="KGk-i7-Jjw" customClass="SLTripPopleCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ek-g5-T4d">
+                        <rect key="frame" x="13" y="13" width="28" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aE5-6C-ysI">
+                        <rect key="frame" x="292" y="20.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="APf-J1-BR0"/>
+                            <constraint firstAttribute="width" constant="20" id="rwo-Jq-fJj"/>
+                        </constraints>
+                        <state key="normal" image="hotel_icon_fan.png"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电话" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7K-2J-gcN">
+                        <rect key="frame" x="13" y="35" width="26" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5ek-g5-T4d" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="13n-S5-GXx"/>
+                    <constraint firstAttribute="bottom" secondItem="E7K-2J-gcN" secondAttribute="bottom" constant="9.5" id="4Pf-Id-wnJ"/>
+                    <constraint firstItem="E7K-2J-gcN" firstAttribute="leading" secondItem="5ek-g5-T4d" secondAttribute="leading" id="Dar-pV-dJw"/>
+                    <constraint firstItem="E7K-2J-gcN" firstAttribute="top" secondItem="5ek-g5-T4d" secondAttribute="bottom" constant="5" id="RNj-r1-rb0"/>
+                    <constraint firstItem="5ek-g5-T4d" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="kjA-H7-UdX"/>
+                    <constraint firstItem="aE5-6C-ysI" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="wIe-nf-LfA"/>
+                    <constraint firstAttribute="trailing" secondItem="aE5-6C-ysI" secondAttribute="trailing" constant="8" id="yS2-Re-aIc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mBtn_status" destination="aE5-6C-ysI" id="qwB-LG-Emg"/>
+                <outlet property="mLB_name" destination="5ek-g5-T4d" id="sNd-0f-7RA"/>
+                <outlet property="mLB_phoneNum" destination="E7K-2J-gcN" id="FfF-ce-WyZ"/>
+            </connections>
+            <point key="canvasLocation" x="280" y="239.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="hotel_icon_fan.png" width="19" height="19"/>
+    </resources>
+</document>

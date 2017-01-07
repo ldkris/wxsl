@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SLChangeUserInfoVC">
+            <connections>
+                <outlet property="mInfoTableView" destination="4qn-Bn-wPB" id="aOC-EF-eap"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="4qn-Bn-wPB">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="KfC-ES-LsG"/>
+                        <outlet property="delegate" destination="-1" id="PFP-Yg-mTv"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4qn-Bn-wPB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3ez-fk-mHY"/>
+                <constraint firstAttribute="trailing" secondItem="4qn-Bn-wPB" secondAttribute="trailing" id="8Gu-Kz-drZ"/>
+                <constraint firstAttribute="bottom" secondItem="4qn-Bn-wPB" secondAttribute="bottom" id="G1C-Ah-2bl"/>
+                <constraint firstItem="4qn-Bn-wPB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Wnx-g4-dlv"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="4qn-Bn-wPB"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="3ez-fk-mHY"/>
+                    <exclude reference="8Gu-Kz-drZ"/>
+                    <exclude reference="G1C-Ah-2bl"/>
+                    <exclude reference="Wnx-g4-dlv"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="4qn-Bn-wPB"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="3ez-fk-mHY"/>
+                    <include reference="8Gu-Kz-drZ"/>
+                    <include reference="G1C-Ah-2bl"/>
+                    <include reference="Wnx-g4-dlv"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

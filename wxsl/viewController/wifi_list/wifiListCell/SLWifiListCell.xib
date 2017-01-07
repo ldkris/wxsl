@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="104" id="KGk-i7-Jjw" customClass="SLWifiListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="103"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="机场取还" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmP-5j-uEY">
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="德国WIFI租赁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8u-so-MX7">
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最早可定9月7日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9U2-ci-bvN">
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="wifi覆盖范围：德国全境" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtk-Qx-zx9">
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥18" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4S-BK-BXk">
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/天起" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEw-IP-WCw">
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4g网络" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQP-5S-y0C">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="1UO-pe-vo4"/>
+                            <constraint firstAttribute="height" constant="18" id="XZV-kC-l44"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.52156862749999999" green="0.83137254900000002" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yHJ-dl-CsJ">
+                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="kcw-5C-31S"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最短租赁天数：3天" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqZ-jQ-6fP">
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rqZ-jQ-6fP" firstAttribute="centerY" secondItem="mtk-Qx-zx9" secondAttribute="centerY" id="69n-Jo-dkl"/>
+                    <constraint firstItem="jQP-5S-y0C" firstAttribute="leading" secondItem="9U2-ci-bvN" secondAttribute="leading" id="7uD-Hm-0yO"/>
+                    <constraint firstAttribute="bottom" secondItem="yHJ-dl-CsJ" secondAttribute="bottom" id="AjI-A0-kwW"/>
+                    <constraint firstItem="9U2-ci-bvN" firstAttribute="leading" secondItem="xmP-5j-uEY" secondAttribute="leading" id="Gb1-f4-fLR"/>
+                    <constraint firstItem="TEw-IP-WCw" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Htv-kc-eNn"/>
+                    <constraint firstItem="yHJ-dl-CsJ" firstAttribute="top" secondItem="mtk-Qx-zx9" secondAttribute="bottom" constant="7.5" id="JQe-Mx-rZB"/>
+                    <constraint firstItem="N4S-BK-BXk" firstAttribute="centerY" secondItem="TEw-IP-WCw" secondAttribute="centerY" id="MKH-9d-RaE"/>
+                    <constraint firstItem="N4S-BK-BXk" firstAttribute="centerY" secondItem="9U2-ci-bvN" secondAttribute="centerY" id="RM1-8d-hLu"/>
+                    <constraint firstItem="f8u-so-MX7" firstAttribute="centerY" secondItem="xmP-5j-uEY" secondAttribute="centerY" id="Rho-FI-IcV"/>
+                    <constraint firstItem="f8u-so-MX7" firstAttribute="leading" secondItem="xmP-5j-uEY" secondAttribute="trailing" constant="46.5" id="Rnq-gS-ofa"/>
+                    <constraint firstItem="rqZ-jQ-6fP" firstAttribute="trailing" secondItem="TEw-IP-WCw" secondAttribute="trailing" id="WMX-aG-fcQ"/>
+                    <constraint firstAttribute="trailing" secondItem="yHJ-dl-CsJ" secondAttribute="trailing" id="bMH-9N-iBO"/>
+                    <constraint firstItem="xmP-5j-uEY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="cEI-hb-sL9"/>
+                    <constraint firstItem="xmP-5j-uEY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="cvf-mT-Q2K"/>
+                    <constraint firstItem="mtk-Qx-zx9" firstAttribute="leading" secondItem="9U2-ci-bvN" secondAttribute="leading" id="reB-rQ-uR1"/>
+                    <constraint firstItem="jQP-5S-y0C" firstAttribute="top" secondItem="9U2-ci-bvN" secondAttribute="bottom" constant="5" id="tfa-Ye-G7V"/>
+                    <constraint firstItem="9U2-ci-bvN" firstAttribute="top" secondItem="xmP-5j-uEY" secondAttribute="bottom" constant="6" id="u9o-3h-D2t"/>
+                    <constraint firstItem="mtk-Qx-zx9" firstAttribute="top" secondItem="jQP-5S-y0C" secondAttribute="bottom" constant="5" id="wcK-a8-Uph"/>
+                    <constraint firstItem="yHJ-dl-CsJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wfy-s7-69G"/>
+                    <constraint firstItem="TEw-IP-WCw" firstAttribute="leading" secondItem="N4S-BK-BXk" secondAttribute="trailing" id="yab-ab-tYf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lab_city" destination="f8u-so-MX7" id="Ug2-fa-yby"/>
+                <outlet property="lab_days" destination="rqZ-jQ-6fP" id="PeK-mi-gWQ"/>
+                <outlet property="lab_earTime" destination="9U2-ci-bvN" id="fm7-El-YRA"/>
+                <outlet property="lab_getStyle" destination="xmP-5j-uEY" id="tjq-Ba-Ud9"/>
+                <outlet property="lab_price" destination="N4S-BK-BXk" id="sLT-1k-o1d"/>
+                <outlet property="lab_wifiScope" destination="mtk-Qx-zx9" id="RyE-8d-LCS"/>
+                <outlet property="mlb_NetWokring" destination="jQP-5S-y0C" id="hU4-ZJ-CWA"/>
+            </connections>
+            <point key="canvasLocation" x="32" y="100"/>
+        </tableViewCell>
+    </objects>
+</document>

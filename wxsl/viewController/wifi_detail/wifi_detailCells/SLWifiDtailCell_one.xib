@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="134" id="KGk-i7-Jjw" customClass="SLWifiDtailCell_one">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="134"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="133"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="德国WIFI租赁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Nl-NI-bwW">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥18" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqy-vg-MQa">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ZS-qz-dT5">
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/天起" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Szp-FY-qTK">
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/台" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Atn-5G-jqK">
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥40" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mmc-Vg-hJD">
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="押金：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z85-E5-Nkk">
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WIFI覆盖范围：德国全境" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOf-43-GmJ">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最短租赁天数：3天" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdA-VL-S9v">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_btn_info.png" translatesAutoresizingMaskIntoConstraints="NO" id="LNO-A0-ots">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="EKF-8S-PfE"/>
+                            <constraint firstAttribute="width" secondItem="LNO-A0-ots" secondAttribute="height" multiplier="25:24" id="gYO-G4-Au1"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMZ-81-5bg">
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96078431369999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Dkw-Be-PUw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="需出行前4天18:00前预定" image="wifi_detail_time.png">
+                            <color key="titleColor" red="0.13493664803145988" green="0.53890843797132781" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifi_hime_arr.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ujq-n9-581"/>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AOf-43-GmJ" firstAttribute="leading" secondItem="gqy-vg-MQa" secondAttribute="leading" id="6Jm-ix-ab6"/>
+                    <constraint firstItem="Atn-5G-jqK" firstAttribute="leading" secondItem="6ZS-qz-dT5" secondAttribute="trailing" constant="1" id="8oi-7d-T8N"/>
+                    <constraint firstItem="6Nl-NI-bwW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="9q7-Ej-Hmi"/>
+                    <constraint firstItem="NdA-VL-S9v" firstAttribute="trailing" secondItem="LNO-A0-ots" secondAttribute="trailing" id="AaS-UI-SIL"/>
+                    <constraint firstAttribute="trailing" secondItem="MMZ-81-5bg" secondAttribute="trailing" id="Bmd-Yg-5zZ"/>
+                    <constraint firstItem="LNO-A0-ots" firstAttribute="centerY" secondItem="Mmc-Vg-hJD" secondAttribute="centerY" id="GRm-Io-0hM"/>
+                    <constraint firstItem="Ujq-n9-581" firstAttribute="centerY" secondItem="MMZ-81-5bg" secondAttribute="centerY" id="Gd9-qJ-dWL"/>
+                    <constraint firstItem="Ujq-n9-581" firstAttribute="trailing" secondItem="NdA-VL-S9v" secondAttribute="trailing" id="Gdf-6p-VRS"/>
+                    <constraint firstItem="MMZ-81-5bg" firstAttribute="top" secondItem="AOf-43-GmJ" secondAttribute="bottom" constant="18.5" id="IRe-OH-mYT"/>
+                    <constraint firstAttribute="trailing" secondItem="LNO-A0-ots" secondAttribute="trailing" constant="7" id="IfS-mh-o7U"/>
+                    <constraint firstItem="Z85-E5-Nkk" firstAttribute="bottom" secondItem="6ZS-qz-dT5" secondAttribute="bottom" id="Oa5-5N-LXK"/>
+                    <constraint firstItem="6ZS-qz-dT5" firstAttribute="bottom" secondItem="Atn-5G-jqK" secondAttribute="bottom" id="RqV-2b-QHp"/>
+                    <constraint firstItem="MMZ-81-5bg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="SAx-GG-XY3"/>
+                    <constraint firstItem="Mmc-Vg-hJD" firstAttribute="leading" secondItem="Szp-FY-qTK" secondAttribute="trailing" constant="15" id="V0e-hf-94G"/>
+                    <constraint firstItem="Mmc-Vg-hJD" firstAttribute="bottom" secondItem="Szp-FY-qTK" secondAttribute="bottom" id="WcI-fD-Xif"/>
+                    <constraint firstAttribute="bottom" secondItem="MMZ-81-5bg" secondAttribute="bottom" id="ZHN-Qg-NPK"/>
+                    <constraint firstItem="gqy-vg-MQa" firstAttribute="leading" secondItem="6Nl-NI-bwW" secondAttribute="leading" id="bOW-gS-YMQ"/>
+                    <constraint firstItem="LNO-A0-ots" firstAttribute="leading" secondItem="Atn-5G-jqK" secondAttribute="trailing" constant="2" id="cLW-eF-LlI"/>
+                    <constraint firstItem="AOf-43-GmJ" firstAttribute="top" secondItem="gqy-vg-MQa" secondAttribute="bottom" constant="8" id="kDS-Ly-Oix"/>
+                    <constraint firstItem="Szp-FY-qTK" firstAttribute="bottom" secondItem="gqy-vg-MQa" secondAttribute="bottom" id="m5B-dZ-U3o"/>
+                    <constraint firstItem="6ZS-qz-dT5" firstAttribute="leading" secondItem="Z85-E5-Nkk" secondAttribute="trailing" constant="1" id="mOb-cE-XZL"/>
+                    <constraint firstItem="Atn-5G-jqK" firstAttribute="bottom" secondItem="Mmc-Vg-hJD" secondAttribute="bottom" id="ocK-pG-0aF"/>
+                    <constraint firstItem="6Nl-NI-bwW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="qO9-Gi-brz"/>
+                    <constraint firstItem="Szp-FY-qTK" firstAttribute="leading" secondItem="gqy-vg-MQa" secondAttribute="trailing" id="qwb-eN-6uu"/>
+                    <constraint firstItem="NdA-VL-S9v" firstAttribute="centerY" secondItem="AOf-43-GmJ" secondAttribute="centerY" id="teE-Dc-ez7"/>
+                    <constraint firstItem="gqy-vg-MQa" firstAttribute="top" secondItem="6Nl-NI-bwW" secondAttribute="bottom" constant="8" id="wOP-TE-ypw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mLab_oldPrice" destination="Mmc-Vg-hJD" id="tg9-51-QU3"/>
+                <outlet property="mlb_city" destination="6Nl-NI-bwW" id="lQV-go-hnL"/>
+                <outlet property="mlb_days" destination="NdA-VL-S9v" id="dDy-ud-WRs"/>
+                <outlet property="mlb_deposit" destination="6ZS-qz-dT5" id="kRy-bN-uB0"/>
+                <outlet property="mlb_needs" destination="MMZ-81-5bg" id="hig-0f-DgC"/>
+                <outlet property="mlb_price" destination="gqy-vg-MQa" id="FVt-TC-ajh"/>
+                <outlet property="mlb_wifiScope" destination="AOf-43-GmJ" id="ubL-XD-MgD"/>
+            </connections>
+            <point key="canvasLocation" x="32" y="81"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="common_btn_info.png" width="25" height="24"/>
+        <image name="wifi_detail_time.png" width="20" height="15"/>
+        <image name="wifi_hime_arr.png" width="15" height="18"/>
+    </resources>
+</document>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SLWifiCancelOrderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmW-sd-Z5q">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oz6-ed-WAD">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择退订台数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUI-Ii-mRe">
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6O-mS-6JP">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="u6g-uz-tRc"/>
+                            </constraints>
+                            <state key="normal" image="order_jian.png"/>
+                            <connections>
+                                <action selector="onclickJianBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="Aw1-FA-pHA"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ed-z2-zdM">
+                            <color key="backgroundColor" red="0.13493664799999999" green="0.53890843799999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="mJb-7b-tQH"/>
+                            </constraints>
+                            <state key="normal" title="确定">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onclickComfirBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="2Qa-aH-cxj"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PaR-Zr-PcI">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="SMJ-37-t3d"/>
+                            </constraints>
+                            <state key="normal" image="cu_add.png"/>
+                            <connections>
+                                <action selector="onclickJiaBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="T5m-Xh-zDd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="l6O-mS-6JP" firstAttribute="centerY" secondItem="kmW-sd-Z5q" secondAttribute="centerY" id="2q4-8w-vDd"/>
+                        <constraint firstItem="oz6-ed-WAD" firstAttribute="centerY" secondItem="kmW-sd-Z5q" secondAttribute="centerY" id="4Ye-Cu-hu6"/>
+                        <constraint firstItem="oz6-ed-WAD" firstAttribute="leading" secondItem="l6O-mS-6JP" secondAttribute="trailing" constant="20" id="9tH-Cd-hMT"/>
+                        <constraint firstItem="kUI-Ii-mRe" firstAttribute="top" secondItem="kmW-sd-Z5q" secondAttribute="top" constant="25" id="AHr-Uv-wHP"/>
+                        <constraint firstItem="PaR-Zr-PcI" firstAttribute="leading" secondItem="oz6-ed-WAD" secondAttribute="trailing" constant="20" id="LUM-kg-uoV"/>
+                        <constraint firstAttribute="height" constant="160" id="SZM-j5-Xu5"/>
+                        <constraint firstAttribute="bottom" secondItem="8ed-z2-zdM" secondAttribute="bottom" constant="15" id="YA5-XB-Fug"/>
+                        <constraint firstItem="kUI-Ii-mRe" firstAttribute="centerX" secondItem="kmW-sd-Z5q" secondAttribute="centerX" id="dmH-RL-rpu"/>
+                        <constraint firstItem="PaR-Zr-PcI" firstAttribute="centerY" secondItem="l6O-mS-6JP" secondAttribute="centerY" id="fbf-bu-pgt"/>
+                        <constraint firstItem="oz6-ed-WAD" firstAttribute="centerX" secondItem="kmW-sd-Z5q" secondAttribute="centerX" id="hWM-wt-inQ"/>
+                        <constraint firstItem="8ed-z2-zdM" firstAttribute="leading" secondItem="kmW-sd-Z5q" secondAttribute="leading" constant="13" id="puc-xh-4MA"/>
+                        <constraint firstAttribute="trailing" secondItem="8ed-z2-zdM" secondAttribute="trailing" constant="13" id="xSL-nE-TlO"/>
+                        <constraint firstAttribute="width" constant="240" id="zmj-At-odP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.3574804687" green="0.3574804687" blue="0.3574804687" alpha="0.42460151010000002" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kmW-sd-Z5q" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Mah-gI-LBk"/>
+                <constraint firstItem="kmW-sd-Z5q" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="f6y-3z-ZpI"/>
+            </constraints>
+            <connections>
+                <outlet property="btn_comfir" destination="8ed-z2-zdM" id="y3J-5p-LJe"/>
+                <outlet property="mContentView" destination="kmW-sd-Z5q" id="ZIn-da-sJ4"/>
+                <outlet property="mlab_num" destination="oz6-ed-WAD" id="dtY-oQ-1km"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="cu_add.png" width="20" height="20"/>
+        <image name="order_jian.png" width="20" height="26"/>
+    </resources>
+</document>

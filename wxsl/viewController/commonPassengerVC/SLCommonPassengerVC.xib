@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SLCommonPassengerVC">
+            <connections>
+                <outlet property="btn_add" destination="WmG-nV-Rik" id="qk4-tU-0qI"/>
+                <outlet property="mInfoTableView" destination="YLi-Up-5IJ" id="46G-ch-DCU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YLi-Up-5IJ">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="separatorColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="3UC-WC-Eho"/>
+                        <outlet property="delegate" destination="-1" id="4bg-UE-5e3"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WmG-nV-Rik">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="Tdg-Fz-8Vp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="29" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="新增出行人" image="cu_add.png">
+                        <color key="titleColor" red="0.14117647059999999" green="0.59999999999999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Tdg-Fz-8Vp"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Tdg-Fz-8Vp"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="onclikAddBtn:" destination="-1" eventType="touchUpInside" id="oVn-Mo-59H"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YLi-Up-5IJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0hf-Ov-XDr"/>
+                <constraint firstAttribute="bottom" secondItem="WmG-nV-Rik" secondAttribute="bottom" id="1z9-wX-uV4"/>
+                <constraint firstItem="YLi-Up-5IJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3bn-rO-hwx"/>
+                <constraint firstAttribute="bottom" secondItem="YLi-Up-5IJ" secondAttribute="bottom" constant="50" id="5XO-fe-W4S"/>
+                <constraint firstItem="WmG-nV-Rik" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YTq-Bo-HT2"/>
+                <constraint firstAttribute="trailing" secondItem="YLi-Up-5IJ" secondAttribute="trailing" id="bBh-hw-2PX"/>
+                <constraint firstAttribute="trailing" secondItem="WmG-nV-Rik" secondAttribute="trailing" id="dnM-31-cbT"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="YLi-Up-5IJ"/>
+                    <exclude reference="WmG-nV-Rik"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="1z9-wX-uV4"/>
+                    <exclude reference="YTq-Bo-HT2"/>
+                    <exclude reference="dnM-31-cbT"/>
+                    <exclude reference="0hf-Ov-XDr"/>
+                    <exclude reference="3bn-rO-hwx"/>
+                    <exclude reference="5XO-fe-W4S"/>
+                    <exclude reference="bBh-hw-2PX"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="YLi-Up-5IJ"/>
+                    <include reference="WmG-nV-Rik"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="1z9-wX-uV4"/>
+                    <include reference="YTq-Bo-HT2"/>
+                    <include reference="dnM-31-cbT"/>
+                    <include reference="0hf-Ov-XDr"/>
+                    <include reference="3bn-rO-hwx"/>
+                    <include reference="5XO-fe-W4S"/>
+                    <include reference="bBh-hw-2PX"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="-214" y="-31"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cu_add.png" width="20" height="20"/>
+    </resources>
+</document>

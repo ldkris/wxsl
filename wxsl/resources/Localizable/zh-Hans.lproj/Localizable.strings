@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  wxsl
+
+  Created by 刘冬 on 16/6/24.
+  Copyright © 2016年 刘冬. All rights reserved.
+*/
+"login"="登陆";
+"Account" ="账号/手机/邮箱";
+"Password" = "密码";
+"forget password" = "忘记密码";
+"Mobile NO" = "手机号码";
+"Verification code" = "验证码";
+"enterphonenumber" = "请输入电话号";
+"entercode" = "请输入验证码";

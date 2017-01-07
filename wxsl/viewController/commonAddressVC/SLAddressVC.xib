@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SLAddressVC">
+            <connections>
+                <outlet property="mInfoTableView" destination="0n7-a3-xhP" id="eJR-Nw-lBP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQO-GU-CcR">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="pif-hN-FFE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="29" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="新增地址" image="cu_add.png">
+                        <color key="titleColor" red="0.14117647059999999" green="0.59999999999999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="pif-hN-FFE"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="pif-hN-FFE"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="onclikAddBtn:" destination="-1" eventType="touchUpInside" id="7KJ-hS-LwO"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0n7-a3-xhP">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="separatorColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="fmy-4a-5ZU"/>
+                        <outlet property="delegate" destination="-1" id="zGM-Ps-dkV"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pQO-GU-CcR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4O2-X9-NsA"/>
+                <constraint firstAttribute="bottom" secondItem="pQO-GU-CcR" secondAttribute="bottom" id="7t9-Qq-V0y"/>
+                <constraint firstAttribute="trailing" secondItem="pQO-GU-CcR" secondAttribute="trailing" id="9Cf-d5-epB"/>
+                <constraint firstItem="0n7-a3-xhP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jyi-7E-FzD"/>
+                <constraint firstItem="0n7-a3-xhP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vFI-Mn-px8"/>
+                <constraint firstAttribute="bottom" secondItem="0n7-a3-xhP" secondAttribute="bottom" constant="50" id="yKN-2k-SCS"/>
+                <constraint firstAttribute="trailing" secondItem="0n7-a3-xhP" secondAttribute="trailing" id="zIn-Ju-NDZ"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="pQO-GU-CcR"/>
+                    <exclude reference="0n7-a3-xhP"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="4O2-X9-NsA"/>
+                    <exclude reference="7t9-Qq-V0y"/>
+                    <exclude reference="9Cf-d5-epB"/>
+                    <exclude reference="jyi-7E-FzD"/>
+                    <exclude reference="vFI-Mn-px8"/>
+                    <exclude reference="yKN-2k-SCS"/>
+                    <exclude reference="zIn-Ju-NDZ"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="pQO-GU-CcR"/>
+                    <include reference="0n7-a3-xhP"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="4O2-X9-NsA"/>
+                    <include reference="7t9-Qq-V0y"/>
+                    <include reference="9Cf-d5-epB"/>
+                    <include reference="jyi-7E-FzD"/>
+                    <include reference="vFI-Mn-px8"/>
+                    <include reference="yKN-2k-SCS"/>
+                    <include reference="zIn-Ju-NDZ"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="cu_add.png" width="20" height="20"/>
+    </resources>
+</document>

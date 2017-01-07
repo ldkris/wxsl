@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="63" id="KGk-i7-Jjw" customClass="SLFIAttachCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="62.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZb-sK-jqn">
+                        <rect key="frame" x="14" y="23" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YoN-xs-zvj">
+                        <rect key="frame" x="64" y="1.5" width="241" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="J0r-0x-zLS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="YoN-xs-zvj" secondAttribute="trailing" constant="7" id="54H-Kx-SJy"/>
+                    <constraint firstItem="YoN-xs-zvj" firstAttribute="centerY" secondItem="gZb-sK-jqn" secondAttribute="centerY" id="Fmf-Kz-YG6"/>
+                    <constraint firstAttribute="bottom" secondItem="YoN-xs-zvj" secondAttribute="bottom" constant="1" id="Nys-kW-BhE"/>
+                    <constraint firstItem="YoN-xs-zvj" firstAttribute="leading" secondItem="gZb-sK-jqn" secondAttribute="trailing" constant="14.5" id="Wf3-kO-uhR"/>
+                    <constraint firstItem="gZb-sK-jqn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="6" id="q4m-1M-DlN"/>
+                    <constraint firstItem="gZb-sK-jqn" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xOG-7R-7AU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mLB_title" destination="gZb-sK-jqn" id="rSG-vU-Frb"/>
+                <outlet property="mTF_input" destination="YoN-xs-zvj" id="byM-bV-Cpi"/>
+            </connections>
+            <point key="canvasLocation" x="280" y="275.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SLWifiHomeHeaderView" id="U6b-Vx-4bR" customClass="SLWifiHomeHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="223"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nex-n3-K3l">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="KEb-iq-jWg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="新手指南" image="wifi_home_help.png">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onclickHelperBtn:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="EMV-FS-dyU"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="如何预定,取还,使用 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WO3-XK-3hA">
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifi_hime_arr.png" translatesAutoresizingMaskIntoConstraints="NO" id="oIj-Pm-FIs"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XZr-0f-xgM">
+                    <color key="backgroundColor" red="0.83529411760000005" green="0.83529411760000005" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="NAi-dw-StV"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5B-MK-4PO">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="pe8-4x-uJG"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="vgL-Ju-cv1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="热门WIFI" image="wifi_home.png">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onclickHotBtn:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="mha-vn-Hfh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96078431369999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="WO3-XK-3hA" secondAttribute="trailing" constant="20" id="2KO-aP-6hi"/>
+                <constraint firstItem="J5B-MK-4PO" firstAttribute="top" secondItem="Nex-n3-K3l" secondAttribute="bottom" constant="8" id="64z-Vv-gd1"/>
+                <constraint firstItem="oIj-Pm-FIs" firstAttribute="centerY" secondItem="Nex-n3-K3l" secondAttribute="centerY" id="7k9-iU-vko"/>
+                <constraint firstAttribute="trailing" secondItem="oIj-Pm-FIs" secondAttribute="trailing" constant="5" id="F8C-Xb-ns1"/>
+                <constraint firstAttribute="trailing" secondItem="J5B-MK-4PO" secondAttribute="trailing" id="HXR-iL-Q25"/>
+                <constraint firstItem="XZr-0f-xgM" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="JVm-Hf-7H9"/>
+                <constraint firstAttribute="bottom" secondItem="XZr-0f-xgM" secondAttribute="bottom" id="PJx-kC-K3h"/>
+                <constraint firstItem="J5B-MK-4PO" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="U8r-Zl-07e"/>
+                <constraint firstItem="Nex-n3-K3l" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="110" id="el2-4Y-dcp"/>
+                <constraint firstItem="Nex-n3-K3l" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="hvI-aa-gqq"/>
+                <constraint firstAttribute="trailing" secondItem="XZr-0f-xgM" secondAttribute="trailing" id="ku2-2t-LLA"/>
+                <constraint firstAttribute="trailing" secondItem="Nex-n3-K3l" secondAttribute="trailing" id="t37-Gf-Tlx"/>
+                <constraint firstItem="WO3-XK-3hA" firstAttribute="centerY" secondItem="Nex-n3-K3l" secondAttribute="centerY" id="w6P-S7-Ycu"/>
+            </constraints>
+            <point key="canvasLocation" x="32" y="20.5"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="wifi_hime_arr.png" width="15" height="18"/>
+        <image name="wifi_home.png" width="20" height="20"/>
+        <image name="wifi_home_help.png" width="20" height="20"/>
+    </resources>
+</document>

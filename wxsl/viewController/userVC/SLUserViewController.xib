@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SLUserViewController">
+            <connections>
+                <outlet property="mInfoTableView" destination="ihR-kh-BW5" id="bQJ-GJ-TjW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ihR-kh-BW5">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="W9f-37-KEH"/>
+                        <outlet property="delegate" destination="-1" id="BY3-JC-Zpd"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ihR-kh-BW5" secondAttribute="bottom" id="3mq-fq-G5O"/>
+                <constraint firstItem="ihR-kh-BW5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3y3-8m-Qfq"/>
+                <constraint firstItem="ihR-kh-BW5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="l5I-oc-VID"/>
+                <constraint firstAttribute="trailing" secondItem="ihR-kh-BW5" secondAttribute="trailing" id="zwP-z2-rG7"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="ihR-kh-BW5"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="3mq-fq-G5O"/>
+                    <exclude reference="3y3-8m-Qfq"/>
+                    <exclude reference="l5I-oc-VID"/>
+                    <exclude reference="zwP-z2-rG7"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="ihR-kh-BW5"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="3mq-fq-G5O"/>
+                    <include reference="3y3-8m-Qfq"/>
+                    <include reference="l5I-oc-VID"/>
+                    <include reference="zwP-z2-rG7"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="259" y="192"/>
+        </view>
+    </objects>
+</document>

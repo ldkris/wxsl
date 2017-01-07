@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SLTicketAlterationInfoVC">
+            <connections>
+                <outlet property="mInfoTableView" destination="e28-d3-Jy1" id="hqc-mc-Bar"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e28-d3-Jy1">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="separatorColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="eLp-Wg-H6h"/>
+                        <outlet property="delegate" destination="-1" id="qAr-Dx-TjN"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="e28-d3-Jy1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Sxn-DP-lbz"/>
+                <constraint firstAttribute="trailing" secondItem="e28-d3-Jy1" secondAttribute="trailing" id="Xd8-fE-Y6O"/>
+                <constraint firstItem="e28-d3-Jy1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="liS-LT-tVZ"/>
+                <constraint firstAttribute="bottom" secondItem="e28-d3-Jy1" secondAttribute="bottom" id="yL6-6z-wpR"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="e28-d3-Jy1"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="Sxn-DP-lbz"/>
+                    <exclude reference="Xd8-fE-Y6O"/>
+                    <exclude reference="liS-LT-tVZ"/>
+                    <exclude reference="yL6-6z-wpR"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="e28-d3-Jy1"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Sxn-DP-lbz"/>
+                    <include reference="Xd8-fE-Y6O"/>
+                    <include reference="liS-LT-tVZ"/>
+                    <include reference="yL6-6z-wpR"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

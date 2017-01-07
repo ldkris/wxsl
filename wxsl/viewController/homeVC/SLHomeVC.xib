@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SLHomeVC">
+            <connections>
+                <outlet property="mInfoCollectionView" destination="gzQ-ec-lTY" id="mFT-G6-Hox"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="gzQ-ec-lTY">
+                    <frame key="frameInset" width="240" height="128"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="4" id="e7X-XN-dk4">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gzQ-ec-lTY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5IB-KS-2SM"/>
+                <constraint firstAttribute="trailing" secondItem="gzQ-ec-lTY" secondAttribute="trailing" id="RXO-G7-dBP"/>
+                <constraint firstAttribute="bottom" secondItem="gzQ-ec-lTY" secondAttribute="bottom" id="Rcs-Rc-5pp"/>
+                <constraint firstItem="gzQ-ec-lTY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="g1w-fG-F2w"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="gzQ-ec-lTY"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="5IB-KS-2SM"/>
+                    <exclude reference="RXO-G7-dBP"/>
+                    <exclude reference="Rcs-Rc-5pp"/>
+                    <exclude reference="g1w-fG-F2w"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="gzQ-ec-lTY"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="5IB-KS-2SM"/>
+                    <include reference="RXO-G7-dBP"/>
+                    <include reference="Rcs-Rc-5pp"/>
+                    <include reference="g1w-fG-F2w"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="293" y="370"/>
+        </view>
+        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="qq7-xi-oTj">
+            <rect key="frame" x="-19" y="-18" width="39" height="37"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="pageIndicatorTintColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="currentPageIndicatorTintColor" red="0.26274509800000001" green="0.69019607839999997" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </pageControl>
+    </objects>
+</document>

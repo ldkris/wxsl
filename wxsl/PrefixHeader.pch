@@ -1,0 +1,32 @@
+//
+//  PrefixHeader.pch
+//  wxsl
+//
+//  Created by 刘冬 on 16/6/6.
+//  Copyright © 2016年 刘冬. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "MyFounctions.h"
+#import "CommonMacro.h"
+#import "SLNetWorkingHelper.h"
+#import "SLModels.h"
+#import "SLNetWorkingStatusView.h"
+
+#import <SVProgressHUD.h>
+#import <AFNetworking.h>
+#import <Mantle/Mantle.h>
+#import <Mantle/MTLJSONAdapter.h>
+#import <ImagePlayerView.h>
+#import "UIImageView+WebCache.h"
+#import "SLSimpleInterest.h"
+#import "Base64codeFunc.h"
+#import <GTMBase64.h>
+#import <Masonry.h>
+#import <PopoverView.h>
+#endif /* PrefixHeader_pch */
